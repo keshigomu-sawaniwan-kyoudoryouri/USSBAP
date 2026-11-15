@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>USSBAP - WASAPI排他 / DSD / YouTube 音楽プレーヤー</title>
+<meta name="description" content="WASAPI排他出力、DSD Native/DoP、LRCLIB歌詞同期、YouTubeストリーミングに対応したWindows音楽プレーヤー。">
+<link rel="icon" href="./favicon.ico">
+<style>
+:root{
+  --bg:#0c0d11; --panel:#14161d; --card:#191c24; --line:#252a36;
+  --text:#ecedf2; --muted:#9aa0ae; --faint:#6b7280;
+  --accent:#8b5cf6; --accent2:#a78bfa; --soft:#2c2542;
+}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(1200px 600px at 80% -10%,#251b40 0%,transparent 60%),var(--bg);color:var(--text);font-family:"Yu Gothic UI","Segoe UI",Meiryo,sans-serif;line-height:1.7}
+a{color:var(--accent2);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header{padding:72px 0 40px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+.brand{display:flex;align-items:center;gap:18px;margin-bottom:18px}
+.brand img{width:72px;height:72px;border-radius:18px}
+h1{font-size:44px;line-height:1.15;margin:0;letter-spacing:-1px}
+.tag{font-size:13px;letter-spacing:.18em;color:var(--accent2);margin:0 0 8px}
+.lead{font-size:16px;color:var(--muted);margin:16px 0 24px;max-width:560px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:10px;font-weight:600;font-size:14px;border:1px solid transparent;transition:.15s}
+.btn.primary{background:var(--accent);color:#0b0c10}
+.btn.primary:hover{background:var(--accent2);text-decoration:none}
+.btn.ghost{background:#171a22;border-color:var(--line);color:var(--text)}
+.btn.ghost:hover{background:#202431;text-decoration:none}
+.meta{font-size:12px;color:var(--faint);margin-top:14px}
+.shot{border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.45);background:#000}
+.shot img{display:block;width:100%}
+section{padding:34px 0}
+h2{font-size:24px;margin:0 0 18px;letter-spacing:-.3px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card h3{font-size:15px;margin:0 0 8px}
+.card p{font-size:13px;color:var(--muted);margin:0}
+.badge{display:inline-block;font-size:10px;padding:2px 7px;border-radius:999px;background:var(--soft);color:var(--accent2);margin-left:6px;vertical-align:middle}
+.note{background:linear-gradient(180deg,#1a1725,#15141b);border:1px solid #332b4a;border-radius:14px;padding:18px 20px;font-size:13px;color:var(--muted)}
+.note strong{color:var(--text)}
+ul{margin:10px 0 0;padding-left:20px;font-size:13px;color:var(--muted)}
+li{margin:5px 0}
+code{background:#11131a;border:1px solid var(--line);padding:2px 6px;border-radius:5px;font-size:12px}
+.update{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center}
+.ver{font-size:13px;color:var(--muted)}
+.notes{white-space:pre-wrap;font-size:13px;color:var(--muted);margin-top:8px}
+footer{border-top:1px solid var(--line);padding:28px 0 50px;color:var(--faint);font-size:12px}
+.footer-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:860px){
+  .hero{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr 1fr}
+  h1{font-size:34px}
+}
+@media(max-width:560px){
+  .grid{grid-template-columns:1fr}
+  header{padding:44px 0 24px}
+  .update{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap hero">
+    <div>
+      <div class="brand">
+        <img src="./icon.png" alt="USSBAP">
+        <div>
+          <p class="tag">EXCLUSIVE AUDIO PLAYER</p>
+          <h1>USSBAP</h1>
+        </div>
+      </div>
+      <p class="lead">WASAPI排他出力、DSD Native / DoP、LRCLIB同期歌詞、YouTube検索・ストリーミング・ダウンロードをまとめたWindows向け音楽プレーヤーです。</p>
+      <div class="actions">
+        <a class="btn primary" id="download" href="https://github.com/keshigomu-sawaniwan-kyoudoryouri/USSBAP/releases/latest">ダウンロード</a>
+        <a class="btn ghost" href="https://github.com/keshigomu-sawaniwan-kyoudoryouri/USSBAP">GitHub</a>
+      </div>
+      <div class="meta">Windows 10 / 11 (64bit)・ユーザー単位インストール（管理者不要）</div>
+    </div>
+    <div class="shot"><img src="./screenshot.png" alt="USSBAP screenshot"></div>
+  </div>
+</header>
+
+<section class="wrap">
+  <div class="update card">
+    <div>
+      <div class="ver">最新バージョン <strong id="version">確認中…</strong></div>
+      <div class="notes" id="notes"></div>
+    </div>
+    <a class="btn ghost" href="https://github.com/keshigomu-sawaniwan-kyoudoryouri/USSBAP/releases">リリース一覧</a>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>主な機能</h2>
+  <div class="grid">
+    <div class="card"><h3>WASAPI 排他出力</h3><p>共有ミキサーを介さない排他モード。USB DAC向けにそのままの形式で出力します。</p></div>
+    <div class="card"><h3>DSD Native / DoP<span class="badge">v1.3</span></h3><p>DSF/DFFのDSD64/128/256に対応。DoPはWASAPI排他、NativeはASIO DSD対応ドライバ経由。音量はDAC側で調整します。</p></div>
+    <div class="card"><h3>LRCLIB 歌詞同期</h3><p>同期歌詞の取得・自動追従・行クリックでシーク。LRCLIB停止時はlyrics.ovhのプレーン歌詞にフォールバックします。</p></div>
+    <div class="card"><h3>YouTube 検索 / ストリーミング</h3><p>検索結果からすぐ再生。URLから曲・プレイリスト・アルバム・ミックスを取り込めます。</p></div>
+    <div class="card"><h3>ライブラリ / キュー</h3><p>ローカル音源をアルバム単位で分類。右クリックで次に再生・キュー追加、シャッフル再生に対応。</p></div>
+    <div class="card"><h3>yt-dlp ダウンロード</h3><p>MP3/M4A/FLACで保存。プレイリスト全体はプレイリスト名のアルバムとしてタグ整理します。</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>インストール / 更新</h2>
+  <div class="note">
+    <p style="margin:0 0 10px">配布は <strong>USSBAP.msi</strong> です。ダブルクリックしてインストールしてください。</p>
+    <ul>
+      <li>インストール先：<code>%LOCALAPPDATA%\Programs\USSBAP</code>（ユーザー単位・管理者不要）</li>
+      <li>アプリ内の「設定 → アプリ情報 / アップデート」から更新を確認できます</li>
+      <li>更新はアプリ内で完結し、インストーラ画面は表示されません</li>
+      <li>設定・歌詞キャッシュ・ストリーム/サムネイルキャッシュ・yt-dlp/ffmpeg は更新後も保持されます</li>
+      <li>起動時に1日1回、更新を自動確認します</li>
+    </ul>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>DSD について</h2>
+  <div class="note">
+    <ul style="margin-top:0">
+      <li><strong>DoP</strong>：WASAPI排他でPCMフレームにDSDを包んで送出。DAC側のDoP対応が必要です。DSD64=176.4kHz、DSD128=352.8kHz、DSD256=705.6kHz</li>
+      <li><strong>Native</strong>：ASIO DSD対応ドライバとUSB DACが必要。未対応の場合はDoPへ自動フォールバックします</li>
+      <li>DSD再生中はソフトウェア音量を無効化します（100%固定）。音量はDAC側で調整してください</li>
+      <li>DST圧縮されたDFFは非対応です</li>
+      <li>DoP非対応のDACにDoPを送るとノイズになるため、必ずDACの対応を確認してください</li>
+    </ul>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>動作環境・注意</h2>
+  <div class="grid">
+    <div class="card"><h3>OS</h3><p>Windows 10 / 11 (64bit)。.NETランタイムのインストールは不要です（自己完結）。</p></div>
+    <div class="card"><h3>ネットワーク</h3><p>YouTube / LRCLIB / 更新確認にインターネット接続を使用します。yt-dlp・ffmpegは未検出時に取得できます。</p></div>
+    <div class="card"><h3>署名</h3><p>現在は自己署名証明書で署名しています。他のPCではSmartScreen警告が出る場合があります。同梱の証明書を信頼するか、CA発行の証明書で再署名してください。</p></div>
+  </div>
+  <div class="note" style="margin-top:14px">
+    BASS / BASSASIO / BASSDSD を同梱しています。これらは非商用利用では無料ですが、商用利用にはBASSのライセンスが必要です。詳細はインストール先の <code>licenses</code> フォルダを確認してください。
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-row">
+    <div>USSBAP - WASAPI / DSD / YouTube player</div>
+    <div><a href="https://github.com/keshigomu-sawaniwan-kyoudoryouri/USSBAP">GitHub</a> ・ <a href="./update.json">update.json</a></div>
+  </div>
+</footer>
+
+<script>
+(async () => {
+  try {
+    const res = await fetch('./update.json?t=' + Date.now(), {cache: 'no-store'});
+    if (!res.ok) return;
+    const info = await res.json();
+    if (info.version) document.getElementById('version').textContent = 'v' + info.version;
+    if (info.notes) document.getElementById('notes').textContent = info.notes;
+    if (info.url) document.getElementById('download').href = info.url;
+  } catch (_) {
+  }
+})();
+</script>
+</body>
+</html>
