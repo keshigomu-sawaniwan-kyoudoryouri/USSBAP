@@ -1,0 +1,7 @@
+{
+    "version":  "1.4.0",
+    "url":  "https://github.com/keshigomu-sawaniwan-kyoudoryouri/USSBAP/releases/download/v1.4.0/USSBAP.msi",
+    "notes":  "DSD Native/DoP対応（USB DAC）、アプリ内アップデート、設定・歌詞・キャッシュ引継ぎ、LRCLIBフォールバック改善",
+    "sha256":  "fceaa28892a948f69f74a9150448d28140233efd5f00e8e90063c7d365014bf3",
+    "published":  "2026-11-14T12:22:37Z"
+}
