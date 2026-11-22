@@ -1,0 +1,217 @@
+# USSBAP — Third-Party Notices
+
+Version 1.4.0  
+Last updated: 2026-11-22
+
+This file is part of the USSBAP source distribution. It lists the
+third-party software and services used by USSBAP. The full license texts
+are in the `licenses/` directory (mirrored in the app under
+`app/src/main/assets/licenses/`) and are also available from
+**Settings → Licenses & Notices**.
+
+## Source code
+
+USSBAP is licensed under the GNU General Public License, version 3
+(GPL-3.0). The corresponding source code is available at:
+
+**https://github.com/keshigomu-sawaniwan-kyoudoryouri/USSBAP**
+
+## Application
+
+**USSBAP — USB Streaming BitPerfect Audio Player**  
+Copyright (C) 2026 USSBAP Project  
+License: GNU General Public License, version 3 (GPL-3.0)  
+Full text: `GPL-3.0.txt`
+
+The DAU model files (`dau_temporal_1p5m_fp16.onnx` and
+`dau_temporal_1p5m_qdq.onnx`) are part of the USSBAP repository. If they
+incorporate third-party model weights or training data, the applicable
+terms must be documented in the repository as well.
+
+## Third-party software
+
+### 1. NewPipe Extractor 0.26.4
+
+- License: GPL-3.0-or-later
+- Copyright (C) NewPipe e.V. and contributors
+- Source: https://github.com/TeamNewPipe/NewPipeExtractor
+- Full text: `GPL-3.0.txt`
+
+### 2. NewPipe Extractor transitive dependencies
+
+- **nanojson** — MIT License — Copyright (C) nanojson contributors  
+  https://github.com/mmastrac/nanojson — full text: `MIT.txt`
+- **jsoup 1.22.2** — MIT License — Copyright (C) Jonathan Hedley  
+  https://jsoup.org/ — full text: `MIT.txt`
+- **JSR-305 3.0.2** — Apache-2.0 — Copyright (C) JSR-305 contributors  
+  https://code.google.com/archive/p/jsr-305/ — full text: `Apache-2.0.txt`
+- **protobuf-javalite 4.35.1** — BSD-3-Clause — Copyright (C) Google LLC  
+  https://github.com/protocolbuffers/protobuf — full text: `BSD-3-Clause.txt`
+- **Rhino 1.8.1 / Rhino Engine 1.8.1** — MPL-2.0 — Copyright (C) Mozilla
+  Foundation and contributors  
+  https://github.com/mozilla/rhino — full text: `MPL-2.0.txt`
+
+### 3. FFmpegKit Maintained 8.1.7 (`ffmpeg-kit-full`)
+
+- License: LGPL-3.0 (FFmpegKit and the FFmpeg build)
+- Copyright (C) FFmpegKit contributors and FFmpeg developers
+- Source: https://github.com/ffmpegkit-maintained/ffmpeg-kit
+- Full text: `LGPL-3.0.txt`
+- The AAR/APK also bundles separate license files for FFmpeg components
+  and libraries. They are listed in the in-app license screen under
+  **FFmpegKit bundled licenses**.
+
+### 4. AndroidX libraries
+
+- `core-ktx` 1.13.1, `appcompat` 1.7.0, `constraintlayout` 2.1.4,
+  `recyclerview` 1.3.2, `drawerlayout` 1.2.0, `coordinatorlayout` 1.3.0,
+  `cardview` 1.0.0, `security-crypto` 1.1.0-alpha06, and transitive
+  AndroidX modules
+- License: Apache-2.0
+- Copyright (C) The Android Open Source Project
+- Source: https://developer.android.com/jetpack/androidx
+- Full text: `Apache-2.0.txt`
+
+### 5. Media3 / ExoPlayer 1.9.3
+
+- License: Apache-2.0
+- Copyright (C) The Android Open Source Project
+- Source: https://github.com/androidx/media
+- Full text: `Apache-2.0.txt`
+
+### 6. Material Components for Android 1.12.0
+
+- License: Apache-2.0
+- Copyright (C) Google LLC
+- Source: https://github.com/material-components/material-components-android
+- Full text: `Apache-2.0.txt`
+
+### 7. OkHttp 4.12.0 and Okio
+
+- License: Apache-2.0
+- Copyright (C) Square, Inc.
+- Source: https://github.com/square/okhttp and https://github.com/square/okio
+- Full text: `Apache-2.0.txt`
+
+### 8. Kotlin 2.0.20, Kotlin Coroutines, and JetBrains annotations
+
+- License: Apache-2.0
+- Copyright (C) JetBrains s.r.o. and Kotlin contributors
+- Source: https://github.com/JetBrains/kotlin
+- Full text: `Apache-2.0.txt`
+
+### 9. ONNX Runtime 1.26.0 (`onnxruntime-android-qnn`)
+
+- License: MIT
+- Copyright (C) Microsoft Corporation
+- Source: https://github.com/microsoft/onnxruntime
+- Full text: `MIT.txt`
+- Note: the QNN execution provider is part of ONNX Runtime. Qualcomm QNN
+  SDK components, if redistributed, are subject to Qualcomm's applicable
+  license terms. USSBAP does not claim ownership of those components.
+
+### 10. yt-dlp-android 2.0.2
+
+- License: MIT
+- Copyright (C) ffmpegkit-maintained contributors
+- Source: https://github.com/ffmpegkit-maintained/yt-dlp-android
+- Full text: `MIT.txt`
+
+### 11. yt-dlp
+
+- License: Unlicense (public domain dedication)
+- Copyright: dedicated to the public domain by the yt-dlp contributors
+- Source: https://github.com/yt-dlp/yt-dlp
+- Full text: `Unlicense.txt`
+
+### 12. Chaquopy 17.0.0
+
+- License: MIT
+- Copyright (C) 2017-2025 Chaquo Ltd and contributors
+- Source: https://github.com/chaquo/chaquopy
+- Full text: `MIT.txt`
+
+### 13. Python 3.13
+
+- License: Python Software Foundation License 2.0 (PSF-2.0)
+- Copyright (C) 2001 Python Software Foundation
+- Source: https://www.python.org/
+- Full text: `PSF-2.0.txt`
+
+### 14. OpenSSL 3.x
+
+- License: Apache-2.0
+- Copyright (C) The OpenSSL Project Authors
+- Source: https://www.openssl.org/
+- Full text: `Apache-2.0.txt`
+
+### 15. SQLite
+
+- License: Public domain
+- Source: https://www.sqlite.org/
+- No separate license text is required.
+
+### 16. zlib
+
+- License: zlib License
+- Copyright (C) 1995-2024 Jean-loup Gailly and Mark Adler
+- Source: https://zlib.net/
+- Full text: `Zlib.txt`
+
+### 17. Decent USB Audio / DecentPlayer
+
+- License: MIT
+- Copyright (C) 2026 Marcelo Silva
+- Source: see `decent-libs/` in the USSBAP repository
+- Full text: `MIT.txt`
+
+### 18. libFLAC
+
+- License: BSD-3-Clause
+- Copyright (C) 2000-2009 Josh Coalson
+- Copyright (C) 2011-2025 Xiph.Org Foundation
+- Source: https://xiph.org/flac/
+- Full text: `BSD-3-Clause.txt`
+
+### 19. Miscellaneous Apache-2.0 components
+
+The following transitive components are also distributed under
+Apache-2.0 and are covered by `Apache-2.0.txt`:
+
+- `androidx.databinding:viewbinding`
+- `androidx.annotation`, `androidx.collection`, `androidx.lifecycle`,
+  `androidx.activity`, `androidx.fragment`, `androidx.emoji2`,
+  `androidx.profileinstaller`, `androidx.startup`, `androidx.tracing`,
+  `androidx.savedstate`, `androidx.vectordrawable`,
+  `androidx.customview`, `androidx.cursoradapter`, `androidx.loader`,
+  `androidx.viewpager`, `androidx.versionedparcelable`,
+  `androidx.interpolator`, `androidx.concurrent`,
+  `androidx.arch.core`, `androidx.resourceinspection`
+- `com.google.guava:listenablefuture`
+- `org.jspecify:jspecify`
+- `com.google.errorprone:error_prone_annotations`
+- `org.jetbrains:annotations`
+- `org.jetbrains.kotlinx:kotlinx-coroutines-*`
+
+## External services (not bundled software)
+
+These are network services, not software libraries. Their own terms and
+privacy policies apply.
+
+- **YouTube / YouTube Music** — https://www.youtube.com/t/terms  
+  YouTube and YouTube Music are trademarks of Google LLC.
+- **LRCLIB** — https://lrclib.net/
+- **lyrics.ovh** — https://lyrics.ovh/
+
+## Trademarks
+
+Android is a trademark of Google LLC. Other product and company names
+are the property of their respective owners. This notice does not grant
+any trademark rights.
+
+## No warranty
+
+Unless required by applicable law or agreed to in writing, the software
+is provided **“AS IS”**, without warranty of any kind. See the full
+license texts for the applicable disclaimers and limitations of
+liability.

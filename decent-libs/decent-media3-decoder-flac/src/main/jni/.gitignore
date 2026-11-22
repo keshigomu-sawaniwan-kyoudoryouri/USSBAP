@@ -1,0 +1,4 @@
+# libFLAC source is vendored for reproducible builds.
+# If it is ever removed, restore it with:
+#   git clone https://github.com/xiph/flac.git --depth=1 libflac
+# libflac/

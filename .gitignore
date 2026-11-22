@@ -1,0 +1,54 @@
+# Gradle / Android build outputs
+.gradle/
+build/
+**/build/
+.kotlin/
+.cxx/
+**/.cxx/
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.hprof
+
+# Local SDK configuration
+local.properties
+
+# Native / generated artifacts
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+*.so
+*.a
+*.o
+*.obj
+
+# Nested repositories and generated vendor state
+**/.git/
+**/.gitmodules
+
+# Model-training checkpoints and release artifacts
+checkpoints/
+build-artifacts/
+
+# Crash / replay logs
+hs_err_pid*.log
+replay_pid*.log
+
+# Local adb / tracing dumps and scratch files
+menu.xml
+window.xml
+perfetto.cfg
+YtDlp_forked.java
+ytdlp_runner_forked.py
+新しいフォルダー/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS metadata
+.DS_Store
+Thumbs.db

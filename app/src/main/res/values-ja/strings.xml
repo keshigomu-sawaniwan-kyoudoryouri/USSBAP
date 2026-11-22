@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">USSBAP</string>
+    <string name="app_full_name">USB Streaming BitPerfect Audio Player</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">ホーム</string>
+    <string name="nav_search">検索</string>
+    <string name="nav_library">ライブラリ</string>
+    <string name="nav_playlists">プレイリスト</string>
+    <string name="nav_history">履歴</string>
+    <string name="nav_dac_info">DAC 情報</string>
+    <string name="nav_other">設定</string>
+    <string name="settings_about">アプリについて</string>
+    <string name="settings_credits">技術公表</string>
+    <string name="settings_licenses">ライセンス / NOTICE</string>
+    <string name="licenses_intro">USSBAP 本体は GPL-3.0 の自由ソフトウェアです。第三者コンポーネントはそれぞれのライセンスに従います。行をタップするとライセンス全文を表示します。</string>
+    <string name="licenses_app_section">USSBAP 本体</string>
+    <string name="licenses_app_license">GNU General Public License v3.0（GPL-3.0）</string>
+    <string name="licenses_app_copyright">Copyright © 2026 USSBAP Project</string>
+    <string name="licenses_source">ソースコード</string>
+    <string name="licenses_source_pending">GitHub のリポジトリURLを公開後にここへ掲載します。</string>
+    <string name="licenses_third_party_section">第三者ソフトウェア</string>
+    <string name="licenses_ffmpeg_section">FFmpegKit 同梱ライセンス</string>
+    <string name="licenses_services_section">外部サービス</string>
+    <string name="licenses_notice">第三者 NOTICE</string>
+    <string name="licenses_view_full">全文を表示</string>
+    <string name="licenses_open_link">リンクを開く</string>
+    <string name="settings_open_log">開く</string>
+    <string name="settings_run_test">実行</string>
+
+    <!-- Home -->
+    <string name="home_now_playing">再生中</string>
+    <string name="home_none">なし</string>
+    <string name="home_quick_access">クイックアクセス</string>
+    <string name="home_library">ライブラリ</string>
+    <string name="home_playlists">プレイリスト</string>
+    <string name="home_search">検索</string>
+    <string name="home_history">履歴</string>
+    <string name="home_playback_device">再生デバイス</string>
+    <string name="home_no_output_devices">出力デバイスがありません</string>
+
+    <!-- Search -->
+    <string name="search_tab_youtube">YouTube</string>
+    <string name="search_tab_yt_music">YT Music</string>
+    <string name="search_hint">曲名またはURLを入力…</string>
+    <string name="search_button">検索</string>
+    <string name="search_searching">検索中…</string>
+    <string name="search_no_results" formatted="false">「%s」の検索結果がありません</string>
+    <string name="search_error">エラー: %s</string>
+
+    <!-- Player -->
+    <string name="player_shuffle">シャッフル</string>
+    <string name="player_repeat">リピート</string>
+    <string name="player_repeat_all">全曲リピート</string>
+    <string name="player_repeat_one">1曲リピート</string>
+    <string name="player_repeat_off">リピート: OFF</string>
+    <string name="player_repeat_all_label">リピート: 全曲</string>
+    <string name="player_repeat_one_label">リピート: 1曲</string>
+    <string name="player_streaming">ストリーミング</string>
+
+    <!-- Bit-Perfect -->
+    <string name="bp_on">排他モード: ON</string>
+    <string name="bp_off">排他モード: OFF</string>
+
+    <!-- DAC Info -->
+    <string name="dac_scanning">スキャン中…</string>
+    <string name="dac_scan_button">USB DAC スキャン</string>
+    <string name="dac_none_detected">USB DAC が検出されませんでした</string>
+    <string name="dac_no_usb_message">USB DAC デバイスが検出されませんでした。\nUSB DAC を接続して再スキャンしてください。</string>
+    <string name="dac_audio_service_unavailable">オーディオサービスを利用できません</string>
+    <string name="dac_detected" formatted="true">%d 台の USB DAC を検出</string>
+    <string name="dac_supported_attrs">サポート中ミキサー属性:</string>
+    <string name="dac_no_attrs">サポート中ミキサー属性: なし</string>
+
+    <!-- Playlists -->
+    <string name="playlist_new">＋ 新規プレイリスト</string>
+    <string name="playlist_create_title">新規プレイリスト</string>
+    <string name="playlist_create_hint">プレイリスト名</string>
+    <string name="playlist_create">作成</string>
+    <string name="playlist_rename_title">プレイリスト名の変更</string>
+    <string name="playlist_rename_ok">OK</string>
+    <string name="playlist_delete_title">プレイリストの削除</string>
+    <string name="playlist_delete_message" formatted="false">「%s」を削除しますか？</string>
+    <string name="playlist_delete_confirm">削除</string>
+    <string name="playlist_add_to">プレイリストに追加</string>
+    <string name="playlist_already_in" formatted="false">すでに「%s」に追加されています</string>
+    <string name="playlist_added" formatted="false">「%s」に追加しました</string>
+    <string name="playlist_shared_tracks" formatted="true">共有: %d 曲</string>
+    <string name="playlist_added_tracks" formatted="true">%d 曲を追加しました</string>
+
+    <!-- Music List -->
+    <string name="menu_play_next">次に再生</string>
+    <string name="menu_add_to_queue">キューに追加</string>
+    <string name="menu_add_to_playlist">プレイリストに追加</string>
+    <string name="menu_rename">名前の変更</string>
+    <string name="menu_delete">削除</string>
+    <string name="toast_added_to_queue">キューに追加しました</string>
+    <string name="toast_stream_immediate">ストリーム曲は即時再生されます</string>
+    <string name="toast_stream_loading">ストリームを解決中...</string>
+
+    <!-- Stream / YouTube Music -->
+    <string name="yt_share_received">YouTube Music から受信しました</string>
+    <string name="yt_loading_playlist">プレイリストを読み込み中…</string>
+    <string name="yt_loading_album">アルバムを読み込み中…</string>
+    <string name="yt_no_items_playlist">プレイリストに曲がありません</string>
+    <string name="yt_no_items_album">アルバムに曲がありません</string>
+    <string name="yt_url_unsupported">未対応のURLです</string>
+    <string name="yt_premium_fallback">YouTube Music Premium 制限のため、YouTube 版へ切り替えました</string>
+    <string name="yt_test_title">yt-dlp テスト</string>
+    <string name="yt_test_running">--dump-single-json 実行中…</string>
+    <string name="yt_test_done" formatted="true">テスト完了。%d 文字。</string>
+
+    <!-- Paste URL -->
+    <string name="paste_url_title">URL 貼り付け</string>
+    <string name="paste_url_hint">YT Music URL</string>
+    <string name="paste_url_play">再生</string>
+
+    <!-- Cookies -->
+    <string name="cookie_title">YouTube Cookie</string>
+    <string name="cookie_instruction">ブラウザで YouTube にログイン後、各Cookieの値を入力してください。\n(DevTools → アプリケーション → Cookie → youtube.com)</string>
+    <string name="cookie_other">その他 (名前=値; …)</string>
+    <string name="cookie_other_hint">other=value; …</string>
+    <string name="cookie_save">保存</string>
+    <string name="cookie_clear">消去</string>
+    <string name="cookie_saved">Cookie を保存しました</string>
+    <string name="cookie_cleared">Cookie を消去しました</string>
+    <string name="cookie_value_hint">値</string>
+
+    <!-- Other / Settings -->
+    <string name="settings_category">設定</string>
+    <string name="settings_dark_mode">ダークモード</string>
+    <string name="settings_app_log">アプリケーションログ</string>
+    <string name="settings_select_folder">音楽フォルダを選択</string>
+    <string name="settings_cookies">YouTube Cookie を設定</string>
+    <string name="settings_test_ytdlp">yt-dlp JSON テスト</string>
+    <string name="settings_language">言語</string>
+    <string name="accent_color">アクセントカラー</string>
+    <string name="accent_purple">パープル</string>
+    <string name="accent_red">レッド</string>
+    <string name="accent_green">グリーン</string>
+    <string name="accent_blue">ブルー</string>
+    <string name="accent_cyan">シアン</string>
+    <string name="accent_magenta">マゼンタ</string>
+    <string name="accent_yellow">イエロー</string>
+    <string name="accent_gray">グレー</string>
+    <string name="settings_app_info">アプリケーション情報</string>
+    <string name="language_system_default">システムデフォルト</string>
+    <string name="language_japanese">日本語</string>
+    <string name="language_english">English</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_cancel">キャンセル</string>
+    <string name="dialog_close">閉じる</string>
+    <string name="dialog_ok">OK</string>
+
+    <!-- Crash -->
+    <string name="crash_title">前回アプリがクラッシュしました</string>
+    <string name="crash_view_report">レポートを見る</string>
+    <string name="crash_share">共有</string>
+    <string name="crash_delete">削除</string>
+
+    <!-- Loading -->
+    <string name="loading">読み込み中…</string>
+
+    <!-- Log tabs -->
+    <string name="log_tab_all">すべて</string>
+    <string name="log_tab_bitperfect">BITPERFECT</string>
+    <string name="log_tab_player">PLAYER</string>
+    <string name="log_tab_ui">UI</string>
+    <string name="log_no_matching">(一致するログなし)</string>
+
+    <!-- USB DAC types -->
+    <string name="usb_type_dac">USB DAC</string>
+    <string name="usb_type_headset">USB ヘッドセット</string>
+    <string name="usb_type_speaker">スピーカー</string>
+    <string name="usb_type_earpiece">イヤピース</string>
+    <string name="usb_type_wired_hp">有線ヘッドフォン</string>
+    <string name="usb_type_wired_hs">有線ヘッドセット</string>
+    <string name="usb_type_bt_a2dp">Bluetooth A2DP</string>
+    <string name="usb_type_bt_sco">Bluetooth SCO</string>
+    <string name="usb_type_hdmi">HDMI</string>
+    <string name="usb_type_unknown">オーディオデバイス</string>
+
+    <!-- Streaming -->
+    <string name="stream_format_label">ストリーミング</string>
+
+    <!-- Song count -->
+    <string name="songs_count" formatted="true">%d 曲</string>
+
+    <!-- Misc -->
+    <string name="unknown">不明</string>
+    <string name="loading_playlist">プレイリスト読み込み中…</string>
+    <string name="loading_album">アルバム読み込み中…</string>
+    <string name="extracting">抽出中…</string>
+
+    <!-- Language chooser -->
+    <string name="language_title">言語</string>
+    <string name="dau_title">DAUエンジン</string>
+    <string name="dau_streaming_only">ストリーミング、保護ダウンロード、AAC・MP3などのローカル／NAS圧縮音源に適用します。ロスレス音源には適用しません。</string>
+    <string name="dau_enable">AI音声補完を有効化</string>
+    <string name="dau_strength">補完強度</string>
+    <string name="nav_playback_settings">再生設定</string>
+    <string name="dsp_title">ストリーミングDSP</string>
+    <string name="dsp_enable">DSPを有効（DAUはオフになります）</string>
+    <string name="dsp_preset">プリセット</string>
+    <string name="dsp_bass">バスブースト</string>
+    <string name="dsp_compressor">コンプレッサー</string>
+
+    <!-- YouTube account / cookies -->
+    <string name="youtube_login_title">YouTube ログイン</string>
+    <string name="youtube_login">YouTubeにログイン（Cookie取得）</string>
+    <string name="youtube_logout">Cookieを削除（ログアウト）</string>
+    <string name="youtube_login_manual">Cookieを手動で貼り付け</string>
+    <string name="youtube_login_save">Cookieを保存</string>
+    <string name="youtube_login_close">閉じる</string>
+    <string name="youtube_login_hint">Googleアカウントでログインしてください。成功するとCookieが自動保存されます。WebViewログインがGoogleに拒否された場合は、ブラウザからCookieヘッダを貼り付けてください。</string>
+    <string name="youtube_login_status_logged_in">Cookie保存済み（ログイン中）</string>
+    <string name="youtube_login_status_logged_out">未ログイン</string>
+    <string name="youtube_cookie_saved">Cookieを保存しました</string>
+    <string name="youtube_cookie_empty">Cookieを取得できませんでした</string>
+    <string name="ytdlp_status_unknown">yt-dlp: 確認中…</string>
+    <string name="ytdlp_status">yt-dlp: %1$s%2$s</string>
+    <string name="ytdlp_status_updated">（更新版）</string>
+    <string name="ytdlp_status_bundled">（同梱版）</string>
+    <string name="ytdlp_update">yt-dlpを更新</string>
+    <string name="ytdlp_reset">同梱版に戻す</string>
+    <string name="ytdlp_checking">yt-dlpの更新を確認中…</string>
+    <string name="ytdlp_latest">yt-dlpは最新版です</string>
+    <string name="ytdlp_updated">yt-dlpを更新しました</string>
+    <string name="ytdlp_update_failed">yt-dlpの更新に失敗: %1$s</string>
+    <string name="ytdlp_reverted">同梱版に戻しました</string>
+    <string name="lyrics_hint">↑ 歌詞</string>
+    <string name="lyrics_title">歌詞</string>
+    <string name="lyrics_close">閉じる</string>
+    <string name="lyrics_loading">歌詞を取得中…</string>
+    <string name="lyrics_not_found">歌詞が見つかりませんでした</string>
+    <string name="lyrics_source">出典: %1$s</string>
+    <string name="lyrics_swipe_down">↓ 上部ハンドルを下にスワイプで閉じる</string>
+</resources>

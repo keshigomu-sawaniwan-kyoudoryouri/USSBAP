@@ -1,0 +1,12 @@
+USSBAP — USB Streaming BitPerfect Audio Player
+Copyright (C) 2026 USSBAP Project
+
+This product includes third-party software. The full list of components,
+copyright notices, and license texts is in THIRD_PARTY_NOTICES.md and
+the licenses/ directory.
+
+USSBAP itself is licensed under the GNU General Public License, version 3.
+See LICENSE and THIRD_PARTY_NOTICES.md for details.
+
+Source code:
+https://github.com/keshigomu-sawaniwan-kyoudoryouri/USSBAP

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_bg">#080B0D</color>
+    <color name="app_bg_alt">#0B1115</color>
+    <color name="surface">#11191E</color>
+    <color name="surface_alt">#101A1F</color>
+    <color name="surface_card">#12191E</color>
+    <color name="panel_bg">#F0141D22</color>
+    <color name="player_bg">#FA0A1115</color>
+    <color name="text_primary">#F2F8FA</color>
+    <color name="text_secondary">#91A5AE</color>
+    <color name="text_muted">#78909A</color>
+    <color name="text_disabled">#888888</color>
+    <color name="accent">#36D9FF</color>
+    <color name="accent_soft">#8BE7FF</color>
+    <color name="on_accent">#001014</color>
+    <color name="icon">#E6F3F7</color>
+    <color name="divider">#24434F</color>
+    <color name="chip_bg">#18262D</color>
+    <color name="chip_stroke">#35515C</color>
+    <color name="play_button">#36D9FF</color>
+    <color name="play_button_stroke">#9BEDFF</color>
+    <color name="gradient_start">#14232A</color>
+    <color name="gradient_center">#0B1115</color>
+    <color name="gradient_end">#050708</color>
+    <color name="queue_bg">#121212</color>
+    <color name="scrim">#000000</color>
+    <color name="error">#FF5252</color>
+</resources>

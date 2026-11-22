@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bottom_home" android:icon="@drawable/ic_home" android:title="ホーム" />
+    <item android:id="@+id/bottom_search" android:icon="@drawable/ic_search" android:title="検索" />
+    <item android:id="@+id/bottom_library" android:icon="@drawable/ic_library" android:title="ライブラリ" />
+    <item android:id="@+id/bottom_playlists" android:icon="@drawable/ic_playlist" android:title="プレイリスト" />
+</menu>

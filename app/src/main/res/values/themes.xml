@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.UsbBitPerfect" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorOnPrimary">@color/on_accent</item>
+        <item name="colorPrimaryContainer">@color/chip_bg</item>
+        <item name="colorOnPrimaryContainer">@color/text_primary</item>
+        <item name="colorSecondary">@color/accent_soft</item>
+        <item name="colorOnSecondary">@color/on_accent</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceContainer">@color/surface_alt</item>
+        <item name="colorSurfaceVariant">@color/surface_alt</item>
+        <item name="android:windowBackground">@color/app_bg</item>
+        <item name="android:navigationBarColor">@color/app_bg</item>
+        <item name="android:statusBarColor">@color/app_bg_alt</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:fontFamily">sans</item>
+    </style>
+
+    <color name="accent_purple">#FF6750A4</color>
+    <color name="accent_purple_container">#FFEADDFF</color>
+    <color name="accent_red">#FFB3261E</color>
+    <color name="accent_red_container">#FFF9DEDC</color>
+    <color name="accent_green">#FF4CAF50</color>
+    <color name="accent_green_container">#FFC8E6C9</color>
+    <color name="accent_blue">#FF1976D2</color>
+    <color name="accent_blue_container">#FFBBDEFB</color>
+    <color name="accent_cyan">#FF0097A7</color>
+    <color name="accent_cyan_container">#FFB2EBF2</color>
+    <color name="accent_magenta">#FFC2185B</color>
+    <color name="accent_magenta_container">#FFF8BBD0</color>
+    <color name="accent_yellow">#FFF9A825</color>
+    <color name="accent_yellow_container">#FFFFF9C4</color>
+    <color name="accent_gray">#FF607D8B</color>
+    <color name="accent_gray_container">#FFCFD8DC</color>
+</resources>
