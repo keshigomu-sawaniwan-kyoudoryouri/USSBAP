@@ -11,8 +11,11 @@ build/
 *.iml
 *.hprof
 
-# Local SDK configuration
+# Local SDK and signing configuration
 local.properties
+keystore.properties
+*.jks
+release.keystore
 
 # Native / generated artifacts
 *.apk
